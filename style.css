@@ -3,6 +3,26 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 
 }
+
+.stickNav{top: 0px;
+         position: sticky;
+         z-index: 999;
+         background-color:rgba(184, 139, 139, 0.866);
+        border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CENTER HAMBURGER */
 .hamburger {
     display: none;
