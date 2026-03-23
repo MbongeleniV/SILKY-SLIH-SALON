@@ -3,6 +3,76 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 
 }
+/* CENTER HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    text-align: end;
+    /*margin-left:300px;*/
+    background-color: rgba(150, 146, 146, 0.622);
+    
+   
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* hide navbar by default */
+    .navbar {
+        display: none;
+       
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 30px; /* adjust if needed */
+        left: 10%;
+        transform: translateX(-50%);
+        color:white;
+        margin-top: -15px;
+        z-index: 1000;
+    }
+
+    /* mobile menu */
+    .navbar.show {
+        display: block;
+        background-color:rgba(188, 108, 108, 0.407);
+        position: absolute; 
+        top: 70px;
+        left: 50%;
+        transform: translateX(-100%);
+        border-radius: 5px;
+        border:1px solid rgba(255, 255, 255, 0.489);
+        /*border: 3px solid rgba(93, 87, 87, 0.303);*/
+       backdrop-filter: blur(7px) ;
+        transition:2s;
+       z-index: 9999;
+       
+    }
+   
+    .navbar ul li {
+        display: block;
+        margin: 12px 0;
+         
+    }
+
+    .navbar  ul li a:hover{/* background-color: rgba(137, 43, 226, 0.155);*/
+                            
+   }
+
+
+}
+
 
 .navContainer{justify-content: space-between;
               display: flex;
@@ -22,10 +92,25 @@ body{background-color: rgba(165, 42, 42, 0.389);
 .navbar a{color:rgb(15, 14, 14);
           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-decoration: none;
-        padding:40px;
+        padding:20px;
         font-size:30px;
         transition: 0.5s ease;
 }
+@media (max-width:768px) {
+  .navbar a{font-size: 20px;
+            color:rgb(240, 238, 236)
+  }
+}
+@media (max-width:768px) {
+  .navbar ul{padding: 0px;
+
+
+  }
+}
+
+
+
+
 .navbar a:hover{color:rgb(221, 28, 93);
                 text-decoration: underline;
                text-shadow: 1px 2px 2px  white;
@@ -33,21 +118,33 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 
 .socials img{width:50px;
-            
-
+            filter:grayscale(0.5);
+            transition: 1s;
 }
-.socials img:hover{cursor: pointer;
-                 
 
+
+.socials img:hover{cursor: pointer;
+                   filter: grayscale(0);
+                   transform: rotateY(190deg);
+}
+@media (max-width:768px){
+  .socials img{width:18px;
+               display:inline-block;
+               margin-top: 20px;
+  }
 }
 
 
 
 .logo img{width:200px;
-
+            filter: drop-shadow(1px 3px 5px green);
 
 }/*end of navbar*/
+@media (max-width:768px) {
+  .logo img{width:100px
 
+  }
+}
 .salonHeroImage{position: relative;
                 width: 100%;
                 display: block;
@@ -57,11 +154,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
             margin:auto;
             border-radius: 3px;
             width:100%;
-          
-          
-     
-           
-         
+                 
 }
 .heroImage{/*height:500px;*/
     
@@ -72,14 +165,11 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 }
 
-
-
 .textOverlay{position:absolute;
              top:50%;
              left:50%;
              text-align: center;
              transform: translate(-50%,-50%);
-
 
 }
 
@@ -87,9 +177,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
                
  
                box-sizing: border-box;
- 
-               
-    
                 display:flex;
                 justify-content:space-evenly;
                  flex-wrap: wrap;
@@ -100,20 +187,17 @@ body{background-color: rgba(165, 42, 42, 0.389);
                 border-radius: 10px;
             
                /* background-color: rgba(57, 142, 199, 0.159);*/
-               
 
                 margin-top: 150px;
-                padding-top: 100px;
-                margin:100px;
+                padding-top: 20px;
+                margin:50px;
+              
 }
 
 .card{margin: 0px;
   padding:0px; 
   box-sizing: border-box;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    
     width:325px;
       background-color: rgba(137, 43, 226, 0.077);
       box-sizing: border-box;
@@ -121,18 +205,22 @@ body{background-color: rgba(165, 42, 42, 0.389);
       overflow:hidden;
       box-shadow: 2px 3px 4px rgb(23, 28, 23);
       text-align: center;
+       transition: 1s;
+}
+.card-container :hover{transform: translateY(-7px);
+                        transition: 1s;
+                       cursor: pointer;
+
 }
 
 .card img{margin: 0px;
   padding:10px; 
   box-sizing: border-box;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    
-    width: 320px;
-          height:auto;
-
+    /*width: 320px;*/
+    width:auto;
+    height:500px;
+border-radius: 20px;
 
 }
 .card-content{margin: 0px;
@@ -187,22 +275,24 @@ body{background-color: rgba(165, 42, 42, 0.389);
                    margin-top: 10px;
                    color: white;
 }
+.card-content .btn:hover{background-color: rgb(62, 60, 60);
+
+
+}
 /*end of the section*/
 
 .imagecollage {display:flex;
                   margin:auto;
                   flex-wrap: wrap;
-
-                 
-                  
                   gap:50px;
                   justify-content: center;
                 /* background-color: rgba(56, 146, 43, 0.073);*/
                    background-color: rgba(131, 116, 146, 0.274);
-        
-                 padding-top: 100px;
-                 padding-bottom: 100px;
-                
+                 padding-top: 200px;
+                 padding-bottom: 50px;
+                 height:300px;
+                 overflow-y: auto;
+                 scrollbar-width:none;
                   
 }
 .imagecollage img{width:300px;
@@ -220,10 +310,12 @@ body{background-color: rgba(165, 42, 42, 0.389);
 .image {display: block;
        
         border-radius:7px ;
-        padding: 20px;
+        padding: 10px;
         max-width: 300px;
-        background-color: rgba(108, 100, 134, 0.307);
+        background-color: rgba(228, 225, 237, 0.307);
         transition: 1s ease-in;
+        /*height: fit-content;*/
+       height:500px
     
 }
 
@@ -233,7 +325,8 @@ body{background-color: rgba(165, 42, 42, 0.389);
            border-radius: 5px;
            transition: 0.5s ease-in;
            /*width:95%;*/
-           height:80%;
+           height:100%;
+          
 
 }
 .image p{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -268,28 +361,48 @@ body{background-color: rgba(165, 42, 42, 0.389);
               
 
 }/*end of section*/
-
-.detailsContainer{justify-content: center;
-                  display: flex;
-                 flex-wrap:wrap;
-                 justify-content: space-between;
-                 margin:40px;
-                 text-align: center;
-
-}
-
 iframe{width: 900px;
       display: block;
       margin: auto;
       margin-top: 50px;
+      width:90%;
 }
+
+
+
+
+.detailsContainer{
+                  display: flex;
+                 flex-wrap:wrap;
+                 justify-content: space-between;
+                 /*margin:40px;*/
+                 text-align: center;
+                 justify-content: center;
+                 border: 1px solid white;
+                 border-radius: 10px 50px 10px 40px;
+                 gap: 40px;
+                 margin-top: 100px;
+               
+}
+
 
 .myHeadings{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: aliceblue;
-             margin:40px;
+             margin-left:40px;
              text-shadow: 1px 2px 3px black;
-             font-size:large;
+             /*font-size:large;*/
              
+}
+
+
+.locationHeading{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 color: aliceblue;
+                margin-left:40px;
+                text-shadow: 1px 2px 3px rgb(220, 13, 13);
+                /*font-size:large;*/
+                text-align: center;
+
+
 }
 .follow p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            color:black;
@@ -299,7 +412,13 @@ iframe{width: 900px;
 .adress{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           color:black;
          font-size:large;
+         border-left: 1px solid;
+        border-right: 1px solid;
+        padding: 10px;
 }
+
+
+
 .hours{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
          color:black;
         font-size:large;
@@ -311,7 +430,7 @@ iframe{width: 900px;
 
 .formm{border:rgb(200, 188, 188) solid 2px;
       width:400px;
-  
+   
       justify-items: center;
      /* margin-left: 500px;*/
       margin-top:100px;
@@ -321,7 +440,7 @@ iframe{width: 900px;
       justify-self: center;
       /*margin-left: 700px;*/
       background-color: rgba(249, 249, 254, 0.274);
-    
+      border-radius: 40px 20px 40px 20px;
 
       
      
@@ -338,16 +457,16 @@ iframe{width: 900px;
 
 
 }
-.youtube1 iframe{width: 650px;
-                 height:500px;
-                 margin-top: 50px;
+.youtube1 iframe{width: 700px;
+                 height:400px;
+                 margin-top: 90px;
 
 
 }
 
 @media (max-width: 768px) {
-    .youtube1 iframe {max-width: 650px;
-               width: 100%;
+    .youtube1 iframe {width: 750px;
+                      width: 100%;
               
                
 
@@ -361,19 +480,31 @@ iframe{width: 900px;
                 width:100%;
                 max-width: 100%;/*inputs will automatically match the form width*/
                display: block;
-              font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-             border:3px solid rgb(202, 200, 210);
-             border-radius: 23px ;
-             
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* border:3px solid rgb(202, 200, 210);*/
+             /*border-radius: 23px ;*/
+                border:none;
+                outline: none;
+                background-color: transparent;
+                border-bottom: 1px solid;
+
 }
+.formm input:focus{border-color:whitesmoke;
+                   color:azure;
+ 
+}
+
+
+
+
 .formm h2{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           color: aliceblue;
-      
+         
 
 }
 .formm label{
              border-radius: 7px ;
-            
+               
 
 
 }
@@ -401,4 +532,18 @@ iframe{width: 900px;
         padding: 20px;
     
     }
+}
+footer{text-align: center;
+        border:rgb(113, 103, 102) 2px solid;
+        border-radius:4px;
+        padding:7px;
+        margin:40px;
+       
+         background-color: rgba(137, 88, 88, 0.749);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position:relative;
+       
+        /*background-repeat: no-repeat;*/
+        background-size:1500px;
+
 }
