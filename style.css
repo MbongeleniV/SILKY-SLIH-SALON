@@ -671,3 +671,14 @@ footer{text-align: center;
                     transition: 1s;
                    
 }
+
+.response{font-size: 20px;
+          color:rgb(29, 159, 29);
+           font-family:Verdana, Geneva, Tahoma, sans-serif
+         
+}
+#dis {
+  transition: 1s;
+  filter: grayscale(1);
+  filter: drop-shadow(1px 2px 2px white);
+}
