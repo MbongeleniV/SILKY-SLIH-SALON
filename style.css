@@ -1,4 +1,9 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body{background-color: rgba(165, 42, 42, 0.389);
 
 
@@ -304,7 +309,7 @@ border-radius: 20px;
                  padding-bottom: 50px;
                  height:300px;
                  overflow-y: auto;
-                 scrollbar-width:none;
+                 scrollbar-width:large;
                   
 }
 .imagecollage img{width:300px;
