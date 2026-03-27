@@ -12,17 +12,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* CENTER HAMBURGER */
 .hamburger {
     display: none;
@@ -470,12 +459,6 @@ border-radius: 20px;
 }/*end of section*/
 
 
-
-
-
-
-
-
 iframe{width: 900px;
       display: block;
       margin: auto;
@@ -506,7 +489,7 @@ iframe{width: 900px;
              margin-left:40px;
              text-shadow: 1px 2px 3px black;
              /*font-size:large;*/
-             
+            
 }
 
 
@@ -568,9 +551,6 @@ iframe{width: 900px;
                       align-items: center;
                       gap:20px;
                       flex-wrap: wrap;
-                     
-
-
 }
 .youtube1 iframe{width: 700px;
                  height:400px;
@@ -587,8 +567,6 @@ iframe{width: 900px;
 
     }
 }
-
-
 
 .formm input,
 .formm select , .formm textarea{/*width:400px;*/
@@ -608,9 +586,6 @@ iframe{width: 900px;
                    color:azure;
  
 }
-
-
-
 
 .formm h2{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           color: aliceblue;
@@ -672,4 +647,22 @@ footer{text-align: center;
         /*background-repeat: no-repeat;*/
         background-size:1500px;
 
+}
+.whatsappLogo img{width: 40px;
+                 
+
+}
+
+.whatsappLogo{justify-self:end;
+               bottom:5px;
+                position: fixed;
+                z-index: 999;
+                  transition: 1s;
+}
+
+.whatsappLogo:hover{cursor: pointer;
+                    transform: scale(1.2);
+                    filter: drop-shadow(2px 2px rgb(23, 23, 23));
+                    transition: 1s;
+                   
 }
