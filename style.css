@@ -37,7 +37,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 
     /* hide navbar by default */
     .navbar {
@@ -107,7 +107,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-decoration: none;
         padding:20px;
-        font-size:30px;
+        font-size:25px;
         transition: 0.5s ease;
 }
 @media (max-width:768px) {
@@ -186,7 +186,77 @@ body{background-color: rgba(165, 42, 42, 0.389);
              transform: translate(-50%,-50%);
 
 }
+/*bout us code*/
+.detailsContainer{
+                  display: flex;
+                 flex-wrap:wrap;
+                 justify-content: space-between;
+                 /*margin:40px;*/
+                 text-align: center;
+                 justify-content: center;
+                 border: 1px solid white;
+                 border-radius: 10px 50px 10px 40px;
+                 gap: 40px;
+                 margin-top: 100px;
+               
+}
 
+
+.myHeading{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+             margin-left:40px;
+             text-shadow: 1px 2px 3px black;
+             /*font-size:large;*/
+            
+}
+
+
+
+.imageMakeUp p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           color:black;
+           font-size:large;
+
+}
+.imageMakeUp img{width:400px;
+                 border-radius: 40px 14px 70px 20px;
+                    width:100%;
+
+}
+
+
+
+.AboutUSText{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color:black;
+         font-size:large;
+         border-left: 1px solid;
+        border-right: 1px solid;
+        padding: 10px;
+        width:400px;
+        text-align: start;
+}
+
+
+
+.hours{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color:black;
+        font-size:large;
+}
+
+
+.imageHairWash img{width:400px;
+                      border-radius: 40px 14px 70px 20px;
+                   width:100%;
+
+}
+.detailsContainer h1{font-size: x-large;
+
+
+}
+
+
+
+
+/*end of about us code*/
 .card-container{margin: 0px;
                
  
@@ -491,7 +561,7 @@ iframe{width: 900px;
 
 .myHeadings{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: aliceblue;
-             margin-left:40px;
+            /* margin-left:40px;*/
              text-shadow: 1px 2px 3px black;
              /*font-size:large;*/
             
@@ -518,6 +588,7 @@ iframe{width: 900px;
          border-left: 1px solid;
         border-right: 1px solid;
         padding: 10px;
+      
 }
 
 
@@ -607,7 +678,7 @@ iframe{width: 900px;
                  
         justify-self: center;            
 } 
-.buttons button{color:rgb(195, 201, 196);
+.buttons button{color:rgb(199, 90, 68);
                 font-size: large;
                 border:1px solid rgb(137, 111, 111);
                border-radius: 5px;
@@ -639,20 +710,63 @@ iframe{width: 900px;
     
     }
 }
-footer{text-align: center;
-        border:rgb(113, 103, 102) 2px solid;
-        border-radius:4px;
-        padding:7px;
-        margin:40px;
+
+/*Footer code*/
+footer{display: flex;
+       justify-content: center;
+      
        
          background-color: rgba(137, 88, 88, 0.749);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        position:relative;
-       
-        /*background-repeat: no-repeat;*/
-        background-size:1500px;
+       height:300px;
+       height:100%;
+         align-self: center;
+        
+}
+
+.components{width:400px;
+            width:90%;
+           /*border:1px solid;*/
+           display: block;
+           padding: 10px;
+           justify-items: center;
+           color:rgba(255, 255, 255, 0.582);
+           font-size: large;
+   
+           flex-wrap: wrap;
+            flex-direction: column;
+           align-self: center;
+            margin: auto;
+          
+}
+.components h1,p{display:block;
+                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 margin:auto;
+                font-size: 90%;
+                 text-align:start; 
+                line-height: 25px;
+}
+
+.components img{width:50px;
+               padding:10px;
+               filter: grayscale(1);
+                display: block;
+                margin:auto;
+               
+               transition: 0.5s;
+}
+
+.components img:hover{filter: grayscale(0); 
+                     filter: drop-shadow(1px 2px 3px);
+                      transition: 0.5s;
+                      cursor: pointer;
 
 }
+
+
+
+
+/* end of Footer code*/
+
 .whatsappLogo img{width: 40px;
                  
 
