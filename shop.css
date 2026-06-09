@@ -1,0 +1,359 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{background-color: rgba(165, 42, 42, 0.389);
+
+
+}
+
+.stickNav{top: 0px;
+         position: sticky;
+         z-index: 999;
+         background-color:rgba(184, 139, 139, 0.866);
+        border-radius: 10px;
+}
+
+
+/* CENTER HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    text-align: end;
+    /*margin-left:300px;*/
+    background-color: rgba(150, 146, 146, 0.622);
+    
+   
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 1300px) {
+
+    /* hide navbar by default */
+    .navbar {
+        display: none;
+       
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 30px; /* adjust if needed */
+        left: 10%;
+        transform: translateX(-50%);
+        color:white;
+        margin-top: -15px;
+        z-index: 1000;
+    }
+
+    /* mobile menu */
+    .navbar.show {
+        display: block;
+        background-color:rgba(188, 108, 108, 0.407);
+        position: absolute; 
+        top: 70px;
+        left: 50%;
+        transform: translateX(-100%);
+        border-radius: 5px;
+        border:1px solid rgba(255, 255, 255, 0.489);
+        /*border: 3px solid rgba(93, 87, 87, 0.303);*/
+       backdrop-filter: blur(7px) ;
+        transition:2s;
+       z-index: 9999;
+       
+    }
+   
+    .navbar ul li {
+        display: block;
+        margin: 12px 0;
+         
+    }
+
+    .navbar  ul li a:hover{/* background-color: rgba(137, 43, 226, 0.155);*/
+                            
+   }
+
+
+}
+
+
+.navContainer{justify-content: space-between;
+              display: flex;
+               margin-left:40px;
+               margin-right: 40px;
+}
+
+.navbar ul{list-style:none;
+          justify-content: center;
+          display: flex;
+        
+          flex-wrap: wrap;
+}
+
+.navbar li{margin:0px}
+
+.navbar a{color:rgb(15, 14, 14);
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        padding:20px;
+        font-size:25px;
+        transition: 0.5s ease;
+}
+@media (max-width:768px) {
+  .navbar a{font-size: 20px;
+            color:rgb(240, 238, 236)
+  }
+}
+@media (max-width:768px) {
+  .navbar ul{padding: 0px;
+
+
+  }
+}
+
+
+
+
+.navbar a:hover{color:rgb(221, 28, 93);
+                text-decoration: underline;
+               text-shadow: 1px 2px 2px  white;
+}
+
+
+.socials img{width:50px;
+            filter:grayscale(0.5);
+            transition: 1s;
+}
+
+
+.socials img:hover{cursor: pointer;
+                   filter: grayscale(0);
+                   transform: rotateY(190deg);
+}
+@media (max-width:768px){
+  .socials img{width:18px;
+               display:inline-block;
+               margin-top: 20px;
+  }
+}
+
+
+
+.logo img{width:200px;
+         
+            filter: drop-shadow(1px 3px 5px green);
+
+}/*end of navbar*/
+@media (max-width:768px) {
+  .logo img{width:100px
+
+  }
+}
+.salonHeroImage{position: relative;
+                width: 100%;
+                display: block;
+}
+
+.heroImage img{display: block;
+            margin:auto;
+            border-radius: 3px;
+            width:100%;
+                 
+}
+.heroImage{/*height:500px;*/
+    
+    
+           overflow:auto;
+            scrollbar-width: none;
+
+
+}
+
+.textOverlay{position:absolute;
+             top:50%;
+             left:50%;
+             text-align: center;
+             transform: translate(-50%,-50%);
+
+}
+.locationHeading {
+    font-family:cursive;
+    color: aliceblue;
+    margin-left: 40px;
+    text-shadow: 1px 2px 3px rgb(220, 13, 13);
+    font-size: large;
+    text-align: center;
+}
+
+
+
+.card-container{margin: 0px;
+               box-sizing: border-box;
+                display:flex;
+                justify-content:space-evenly;
+                 flex-wrap: wrap;
+               
+                row-gap: 50px;
+                border:1px solid rgba(0, 128, 0, 0.153);
+                border-radius: 10px;
+            
+                background-color: rgba(57, 142, 199, 0.066);
+                 background-image:linear-gradient(rgba(57, 142, 199, 0.041), rgba(141, 169, 86, 0.181)),
+        url("complaintform.wbp");
+                margin-top: 50px;
+                padding-top: 50px;
+                margin-bottom: 50px;
+             
+}
+
+.card{margin: 0px;
+  padding:0px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+    
+    
+    width:325px;
+      background-color: rgba(137, 43, 226, 0.2);
+      box-sizing: border-box;
+      border-radius:8px ;
+      overflow:hidden;
+      box-shadow: 2px 3px 4px rgb(23, 28, 23);
+      text-align: center;
+}
+
+.card img{margin: 0px;
+  padding:10px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+    
+    
+    width: 320px;
+          height:auto;
+
+
+}
+.card-content{margin: 0px;
+  padding:0px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    padding:16px;
+              
+}
+
+.card-content h3{margin: 0px;
+  padding:0px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+    
+    font-size:28px ;
+                 margin-bottom:8px ;
+
+}
+.card-content p{margin: 0px;
+  padding:0px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+    color:rgb(24, 23, 23);
+}
+
+.card-content .btn{margin: 0px;
+  padding:0px; 
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+    display:inline-block;
+                   padding:8px 16px;
+                   background-color: black;
+                    border-radius: 10px;
+                    text-decoration: none;
+                   margin-top: 10px;
+                   color: white;
+}
+
+.imagecollage {display:flex;
+                  margin:auto;
+                  flex-wrap: wrap;
+
+                  border:1px solid rgb(85, 97, 177);
+                  
+                  gap:50px;
+                  justify-content: center;
+                /* background-color: rgba(56, 146, 43, 0.073);*/
+                 background-image:linear-gradient(rgba(16, 69, 194, 0.214), rgba(130, 156, 124, 0.614)),
+        url("complaintform.wbp");
+                 padding-top: 0px;
+                 padding-bottom: 100px;
+                             
+}
+.imagecollage img{width:300px;
+                  height:200px;           
+                 
+}
+
+/*Footer code*/
+footer{display: flex;
+       justify-content: center;
+      
+         background-color: rgba(137, 88, 88, 0.749);
+       height:300px;
+       height:100%;
+         align-self: center;
+        
+}
+
+.components{width:400px;
+            width:90%;
+           /*border:1px solid;*/
+           display: block;
+           padding: 10px;
+           justify-items: center;
+           color:rgba(255, 255, 255, 0.582);
+           font-size: large;
+   
+           flex-wrap: wrap;
+            flex-direction: column;
+           align-self: center;
+            margin: auto;
+          
+}
+.components h1,p{display:block;
+                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 margin:auto;
+                font-size: 90%;
+                 text-align:start; 
+                line-height: 25px;
+}
+
+.components img{width:50px;
+               padding:10px;
+               filter: grayscale(1);
+                display: block;
+                margin:auto;
+               
+               transition: 0.5s;
+}
+
+
+.components img:hover{filter: grayscale(0); 
+                     filter: drop-shadow(1px 2px 3px white);
+                      transition: 0.5s;
+                      cursor: pointer;
+
+}
+
+/* end of Footer code*/
