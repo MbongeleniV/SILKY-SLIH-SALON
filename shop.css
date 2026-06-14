@@ -3,9 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body{background-color: rgba(165, 42, 42, 0.389);
-
 
 }
 
@@ -16,7 +14,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
         border-radius: 10px;
 }
 
-
 /* CENTER HAMBURGER */
 .hamburger {
     display: none;
@@ -25,8 +22,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
     text-align: end;
     /*margin-left:300px;*/
     background-color: rgba(150, 146, 146, 0.622);
-    
-   
+     
 }
 
 /* DESKTOP */
@@ -87,7 +83,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 }
 
-
 .navContainer{justify-content: space-between;
               display: flex;
                margin-left:40px;
@@ -122,33 +117,26 @@ body{background-color: rgba(165, 42, 42, 0.389);
   }
 }
 
-
-
-
 .navbar a:hover{color:rgb(221, 28, 93);
                 text-decoration: underline;
                text-shadow: 1px 2px 2px  white;
 }
-
 
 .socials img{width:50px;
             filter:grayscale(0.5);
             transition: 1s;
 }
 
-
 .socials img:hover{cursor: pointer;
                    filter: grayscale(0);
                    transform: rotateY(190deg);
 }
 @media (max-width:768px){
-  .socials img{width:18px;
+  .socials img{width:40px;
                display:inline-block;
                margin-top: 20px;
   }
 }
-
-
 
 .logo img{width:200px;
          
@@ -171,12 +159,9 @@ body{background-color: rgba(165, 42, 42, 0.389);
             width:100%;
                  
 }
-.heroImage{/*height:500px;*/
-    
-    
+.heroImage{
            overflow:auto;
             scrollbar-width: none;
-
 
 }
 
@@ -188,116 +173,100 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 }
 .locationHeading {
-    font-family:cursive;
-    color: aliceblue;
-    margin-left: 40px;
-    text-shadow: 1px 2px 3px rgb(220, 13, 13);
-    font-size: large;
-    text-align: center;
+                  font-family:'Times New Roman', Times, serif;
+                  color: aliceblue;
+                   margin-left: 40px;
+                  text-shadow: 1px 2px 3px rgb(220, 13, 13);
+                  font-size: large;
+                   text-align: center;
 }
 
-
-
 .card-container{margin: 0px;
-               box-sizing: border-box;
+                box-sizing: border-box;
                 display:flex;
                 justify-content:space-evenly;
-                 flex-wrap: wrap;
-               
-                row-gap: 50px;
+                flex-wrap: wrap;
+                row-gap: 30px;
                 border:1px solid rgba(0, 128, 0, 0.153);
                 border-radius: 10px;
-            
                 background-color: rgba(57, 142, 199, 0.066);
                  background-image:linear-gradient(rgba(57, 142, 199, 0.041), rgba(141, 169, 86, 0.181)),
-        url("complaintform.wbp");
+                url("complaintform.wbp");
                 margin-top: 50px;
-                padding-top: 50px;
                 margin-bottom: 50px;
              
 }
 
 .card{margin: 0px;
-  padding:0px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    
-    width:325px;
+      padding:0px; 
+      box-sizing: border-box;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      width:270px;
       background-color: rgba(137, 43, 226, 0.2);
       box-sizing: border-box;
       border-radius:8px ;
       overflow:hidden;
       box-shadow: 2px 3px 4px rgb(23, 28, 23);
       text-align: center;
+      font-size: 13px;
 }
 
 .card img{margin: 0px;
-  padding:10px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    
-    width: 320px;
+          padding:10px; 
+          box-sizing: border-box;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+          width: 190px;
           height:auto;
-
 
 }
 .card-content{margin: 0px;
-  padding:0px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
-    padding:16px;
-              
+              padding:0px; 
+              box-sizing: border-box;
+              font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+              padding:16px;
+                        
 }
 
 .card-content h3{margin: 0px;
-  padding:0px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    
-    font-size:28px ;
+                 padding:0px; 
+                 box-sizing: border-box;
+                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                 font-size:28px ;
                  margin-bottom:8px ;
+                 font-size: 17px;
 
 }
 .card-content p{margin: 0px;
-  padding:0px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
-    color:rgb(24, 23, 23);
+                padding:0px; 
+                box-sizing: border-box;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                color:rgb(24, 23, 23);
 }
 
 .card-content .btn{margin: 0px;
-  padding:0px; 
-  box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-
-    display:inline-block;
+                   padding:0px; 
+                   box-sizing: border-box;
+                   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                   display:inline-block;
                    padding:8px 16px;
                    background-color: black;
-                    border-radius: 10px;
-                    text-decoration: none;
+                   border-radius: 10px;
+                   text-decoration: none;
                    margin-top: 10px;
                    color: white;
 }
 
-.imagecollage {display:flex;
+.imagecollage  { display:flex;
                   margin:auto;
                   flex-wrap: wrap;
-
                   border:1px solid rgb(85, 97, 177);
-                  
                   gap:50px;
                   justify-content: center;
                 /* background-color: rgba(56, 146, 43, 0.073);*/
-                 background-image:linear-gradient(rgba(16, 69, 194, 0.214), rgba(130, 156, 124, 0.614)),
-        url("complaintform.wbp");
-                 padding-top: 0px;
-                 padding-bottom: 100px;
+                  background-image:linear-gradient(rgba(16, 69, 194, 0.214), rgba(130, 156, 124, 0.614)),
+                  url("complaintform.wbp");
+                  padding-top: 0px;
+                  padding-bottom: 100px;
                              
 }
 .imagecollage img{width:300px;
@@ -308,11 +277,10 @@ body{background-color: rgba(165, 42, 42, 0.389);
 /*Footer code*/
 footer{display: flex;
        justify-content: center;
-      
-         background-color: rgba(137, 88, 88, 0.749);
+       background-color: rgba(137, 88, 88, 0.749);
        height:300px;
        height:100%;
-         align-self: center;
+      align-self: center;
         
 }
 
@@ -324,7 +292,6 @@ footer{display: flex;
            justify-items: center;
            color:rgba(255, 255, 255, 0.582);
            font-size: large;
-   
            flex-wrap: wrap;
             flex-direction: column;
            align-self: center;
@@ -344,16 +311,13 @@ footer{display: flex;
                filter: grayscale(1);
                 display: block;
                 margin:auto;
-               
                transition: 0.5s;
 }
-
 
 .components img:hover{filter: grayscale(0); 
                      filter: drop-shadow(1px 2px 3px white);
                       transition: 0.5s;
                       cursor: pointer;
-
 }
 
 /* end of Footer code*/
