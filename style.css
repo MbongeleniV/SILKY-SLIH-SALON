@@ -10,7 +10,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
 }
 
 .stickNav{top: 0px;
-         position: sticky;
+         position:sticky;
          z-index: 999;
          background-color:rgba(184, 139, 139, 0.866);
         border-radius: 10px;
@@ -25,7 +25,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
     text-align: end;
     /*margin-left:300px;*/
     background-color: rgba(150, 146, 146, 0.622);
-      
+    
 }
 
 /* DESKTOP */
@@ -114,7 +114,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
 @media (max-width:768px) {
   .navbar ul{padding: 0px;
 
-
   }
 }
 
@@ -123,12 +122,10 @@ body{background-color: rgba(165, 42, 42, 0.389);
                text-shadow: 1px 2px 2px  white;
 }
 
-
 .socials img{width:50px;
             filter:grayscale(0.5);
             transition: 1s;
 }
-
 
 .socials img:hover{cursor: pointer;
                    filter: grayscale(0);
@@ -140,8 +137,6 @@ body{background-color: rgba(165, 42, 42, 0.389);
                margin-top: 20px;
   }
 }
-
-
 
 .logo img{width:200px;
           filter: drop-shadow(1px 3px 5px green);
@@ -167,16 +162,52 @@ body{background-color: rgba(165, 42, 42, 0.389);
             overflow:auto;
             scrollbar-width: none;
 
-
 }
 
 .textOverlay{position:absolute;
-             top:50%;
+             top:70%;
              left:50%;
-             text-align: center;
+             text-align:center;
+             z-index: 2;
              transform: translate(-50%,-50%);
 
 }
+
+.textOverlay p{color:rgb(247, 17, 17);
+               font-size:x-large;
+               font-family:cursive;
+               margin-bottom: 20px;
+               padding: 0;
+               
+}
+.textOverlay button{border: 2px solid rgba(255, 0, 0, 0.641);
+                    border-radius:7px;
+                    width:130px;
+                    height:40px;
+                    background-color: rgb(226, 43, 156);
+                    cursor:pointer;
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: large;
+                    transition: 1s;
+      
+}
+.textOverlay button:hover{transform: scale(0.9);
+
+}
+
+@media (max-width: 769px) {
+    .textOverlay button {width:110px;
+                         height:40px;
+                         font-size:small;
+    }
+    .textOverlay p{font-size: larger;
+
+    }
+    
+}
+
+
+
 /*bout us code*/
 .detailsContainer{
                   display: flex;
@@ -227,7 +258,7 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 .imageHairWash img{width:400px;
                   border-radius: 40px 14px 70px 20px;
-                  /* width:100%;*/
+                  width:100%;
 
 }
 .detailsContainer h1{font-size: x-large;
@@ -485,7 +516,7 @@ iframe{width: 900px;
 .myHeadings{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: aliceblue;
             /* margin-left:40px;*/
-             text-shadow: 1px 2px 3px black;
+            text-shadow: 1px 2px 3px black;
              /*font-size:large;*/
             
 }
@@ -514,8 +545,9 @@ iframe{width: 900px;
 }
 
 .hours{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         color:black;
-        font-size:large;
+       color:black;
+       font-size:large;
+       padding-bottom: 40px;
 }
 .detailsContainer h1{font-size: x-large;
 
@@ -536,7 +568,6 @@ iframe{width: 900px;
 }
 
 .formandyoutubecont  {display: flex;
-                      
                       justify-content: center;
                       align-items: center;
                       gap:20px;
@@ -563,6 +594,7 @@ iframe{width: 900px;
                                 outline: none;
                                 background-color: transparent;
                                 border-bottom: 1px solid;
+                                width:300px
 
 }
 .formm input:focus{border-color:whitesmoke;
@@ -572,6 +604,8 @@ iframe{width: 900px;
 
 .formm h2{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           color: aliceblue;
+          color:rgba(231, 31, 31, 0.712);
+          text-decoration:underline;
          
 }
 .formm label{
@@ -580,7 +614,7 @@ iframe{width: 900px;
 .buttons{ padding:10px;       
           justify-self: center;            
 } 
-.buttons button{color:rgb(199, 90, 68);
+.buttons button{color:rgb(238, 30, 169);
                 font-size: large;
                 border:1px solid rgb(137, 111, 111);
                 border-radius: 5px;

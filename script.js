@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function display() {
+/*function display() {
 
   let message = document.getElementById("dis");
 
@@ -19,4 +19,4 @@ function display() {
     message.textContent = "";
   }, 3000);
 
-}
+}*/
