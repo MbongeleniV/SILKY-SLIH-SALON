@@ -175,9 +175,10 @@ body{background-color: rgba(165, 42, 42, 0.389);
 
 .textOverlay p{color:rgb(247, 17, 17);
                font-size:x-large;
-               font-family:cursive;
+               font-family:'Times New Roman', Times, serif;
                margin-bottom: 5px;
                padding: 0;
+               text-align: center;
                
 }
 .textOverlay button{border: 2px solid rgba(255, 0, 0, 0.641);
